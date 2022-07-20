@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>APP</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+<div class="topnav" id="myTopnav">
+  <a href="Home.html" class="active">Home</a>
+  <a href="AddClient.html">Add</a>
+  <a href="ListClient.jsp">List</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<form action="/Demo_01/AddClient" method="post" class="form card" id="frm">
+<table class="table table-hover ">
+<tr>
+<td>Nom</td>
+<td><input type="text" name="nom" id="txt"></td>
+</tr>
+<tr>
+<td>Prenom</td>
+<td><input type="text" name="prenom" id="txt"></td>
+</tr>
+<tr>
+<td>Ville</td>
+<td><input type="text" name="ville" id="txt"></td>
+</tr>
+<tr>
+<td><Button onclick="clear" type="submit" class="btn btn-primary">ADD client</Button></td>
+</tr>
+</table>
+</form>
+
+<script src="myscript.js"></script>
+</body>
+</html>
